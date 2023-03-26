@@ -4416,6 +4416,10 @@ a.metaportal_fn_videobutton:hover .icon {
   }
 }
 @media (max-width: 1400px) {
+  /* padding test*/
+  body{
+    padding: 0 !important;
+  }
   .fn_cs_about .left_part,
   .fn_cs_steps[data-cols="4"] li {
     width: 50%;
