@@ -73,13 +73,14 @@ body {
   </style>
   <script>
 	function hidePreloader() {
-	  
-	  setTimeout(function() {
-		document.querySelector('#preloader').style.display = 'none';
-		document.querySelector('#content').style.display = 'block';
-	  }, 3000);
+	  document.querySelector('#preloader').style.display = 'none';
+	  document.querySelector('#content').style.display = 'block';
 	}
-	</script>
+	
+	window.addEventListener('load', function() {
+	  setTimeout(hidePreloader, 2000); 
+	});
+</script>
 <!-- !Preloader -->
 
 <!-- Left Navigation -->
