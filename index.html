@@ -73,13 +73,12 @@ body {
   </style>
   <script>
 	function hidePreloader() {
-	  document.querySelector('#preloader').style.display = 'none';
-	  document.querySelector('#content').style.display = 'block';
-	}
-	
-	window.addEventListener('load', function() {
-	  setTimeout(hidePreloader, 2000); 
-	});
+  
+  setTimeout(function() {
+    document.querySelector('#preloader').style.display = 'none';
+    document.querySelector('#content').style.display = 'block';
+  }, 3000);
+}
 </script>
 <!-- !Preloader -->
 
@@ -786,7 +785,7 @@ setInterval('updateTimer()', 1000);
 											<div class="img">
 											<div class="img_holder">
 											<a href="events.html" class="full_link"></a>
-											<img src="https://i.postimg.cc/MKBy4ZH5/Abraxas-logo-new-1.png">
+											<img src="https://www.shutterstock.com/image-vector/techno-type-font-alphabet-digital-260nw-302066147.jpg">
 											<h3 class="fn__gradient_title"></h3>	
 											<p>TECHNICAL EVENTS</p> 
 										</div>	
@@ -797,7 +796,7 @@ setInterval('updateTimer()', 1000);
 										<div class="item_in">
 											<div class="img">
 											<div class="img_holder">
-											<img src="https://i.postimg.cc/MKBy4ZH5/Abraxas-	logo-new-1.png">
+											<img src="https://i.postimg.cc/MKBy4ZH5/Abraxas-logo-new-1.png">
 											<a href="events.html" class="full_link"></a>
 											<h3 class="fn__gradient_title"></h3>	
 											<p>CULTURAL EVENTS</p> 
