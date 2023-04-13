@@ -1,267 +1,376 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ABRAXAS 2023 | EVENTS</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="custom.js"></script> 
-</head>
-<body>
-    <section class="coming-soon">
-    <div class="coming-soon-inner">
-      <h1 class="heading">Coming Soon</h1>
-      
-      <div class="counter-timer">
+    <section class="content">
+        <article class="home_page_top">
+          <header>
+            <img class="logo_site" src="" alt="" /></a>
+           
+            <h1>Coming Soon</h1>
+            <h4>ABRAXAS 2023 | EVENTS</h4>
+          </header>
+          <div class="coming_soon">
+            <div>
+              <svg class="circle_2" height="300" width="300">
+                <circle cx="150" cy="150" r="100" stroke-width="5" fill="transparent" stroke-dasharray="100" stroke-dashoffset="200" />
+              </svg>
+            </div>
+            <div>
+              <svg class="circle_3" height="300" width="300">
+                <circle cx="150" cy="150" r="50" stroke-width="5" fill="transparent" stroke-dasharray="50" stroke-dashoffset="50" />
+              </svg>
+            </div>
+            <div>
+              <svg class="circle_1" height="300" width="300">
+                <circle cx="150" cy="150" r="150" stroke-width="5" fill="transparent" stroke-dasharray="150" stroke-dashoffset="150" />
+              </svg>
+            </div>
+          </div>
+          <div class="data_time">
+           
+          </div>
+          </div>
         
-    </div>
-    <style>
-        * {
-  margin: 0;
-  padding: 0;
-  font-family: 'Oswald', sans-serif; 
-}
-body {
-    overflow: hidden;
-}
-.coming-soon {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, #7000ff, #cc00ff, #1b121d 0, #120f2f 50%, #1b121d 100%);
-    overflow: hidden;
-}
-.coming-soon {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to bottom, #7000ff, #cc00ff);
-    overflow: hidden;
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
+        <article class="home_page_bot">
+          
+        
+        
+      </section>
+      <style>
+        body {
+  background: #000;
+  color: #FF6600;
+  padding: 5px;
+  font-family: 'Gruppo', cursive;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.home_page_top {
+  background: #000;
+  color: #FF6600;
+  /* border-top: 5px solid #FF6600; */
+  /* border-bottom: 5px solid #FF6600; */
+  padding: 5px;
+  position: relative;
+  margin-bottom: 10px;
 }
 
+.home_page_top:before {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  border-radius: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 20px;
+  width: 40%;
+  /* background-color: #FF6600; */
+}
 
+.home_page_top:after {
+  content: '';
+  position: absolute;
+  top: -12px;
+  border-radius: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 20px;
+  width: 40%;
+  /* background-color: #FF6600; */
+}
 
+.content {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
 
+.logo_site {
+  left: 5%;
+  top: 200px;
+  width: 200px;
+  height: auto;
+  position: absolute;
+}
 
+.affiche_don {
+  right: 5%;
+  top: 153px;
+  position: absolute;
+  width: 200px;
+  height: 300px;
+}
 
-.coming-soon-inner {
-    position: relative;
+.link_affiche_don {
+  top: 420px;
+  right: 8%;
+  position: absolute;
+  color: #FF6600;
 }
-.heading {
-    font-size: 100px;
-    text-transform: uppercase;
-    padding: 20px;
-    background: #000;
-    color: #ffffff;
-    transform: skewY(-10deg);
-    font-weight: 500;
-    line-height: 100px;
+
+.link_affiche_don:hover {
+  color: #ffbe00;
 }
-.small-heading {
-    font-size: 30px;
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 20px;
-    background: #fff;
-    color: #ffffff;
-    transform: skewY(-10deg);
-    font-weight: 500;
-    line-height: 30px;
-    box-shadow: 10px 10px 20px rgb(0 0 0 / .3);
-    position: absolute;
-    right: 0;
-    bottom: -44px;
+
+h4 {
+  margin-top: -20px;
+  color: #fff;
 }
-ul {
-    list-style: none;
-    display: flex;
-    column-gap: 10px;
+
+h1 {
+  font-size: 28px;
 }
-.counter-timer {
-    transform: skewY(-10deg);
-    position: absolute;
-    left: 0;
-    bottom: -75px;
+
+svg {
+  margin: 50px;
 }
-.counter-timer > ul > li > span {
-    padding-right: 5px;
+
+.coming_soon {
+  height: 300px;
+  margin: 50px;
 }
-/*******************************/
-span.bar {
-    display: block;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    z-index: 999;
+
+.coming_soon div {
+  position: absolute;
+  top: calc(50% - 175px);
+  left: calc(50% - 200px);
 }
-span.bar i {
-    font-size: 35px;
-    cursor: pointer;
+
+.circle_1 {
+  -webkit-animation: spin_1 4s infinite alternate;
+  -moz-animation: spin_1 4s infinite alternate;
+  animation: spin_1 4s infinite alternate;
 }
-nav.toggle-nav {
-    position: fixed;
-    right: -100px;
-    background: #fff;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.5s linear;
-    z-index: 333;
+
+.circle_2 {
+  -webkit-animation: spin_2 4s infinite alternate;
+  animation: spin_2 4s infinite alternate;
+  -moz-animation: spin_2 4s infinite alternate;
 }
-nav.toggle-nav.active {
-  right: 0px;
+
+.circle_3 {
+  -webkit-animation: spin_3 4s infinite alternate;
+  animation: spin_3 4s infinite alternate;
+  -moz-animation: spin_3 4s infinite alternate;
 }
-ul.listing, ul.listing > li {
-    display: block;
-}
-ul.listing > li > a {
-    font-size: 30px;
-    color: #000;
-    padding: 10px;
-    display: block;
-    text-align: center;
-    transition: 0.5s linear;
-}
-ul.listing > li > a:hover{
-    color: #fece00;
-}
-.coming-soon-inner:before {
-    content: "";
-    height: 2px;
-    width: 60%;
-    background: #000;
-    position: absolute;
-    top: -50px;
-    right: 0;
-    transform: skewY(-10deg);
-}
-.coming-soon-inner:after {
-    content: "";
-    height: 2px;
-    width: 60%;
-    background: #fff;
-    position: absolute;
-    bottom: -80px;
-    right: 0;
-    transform: skewY(-10deg);
-}
-.heading:before {
-    content: "";
-    height: 2px;
-    width: 60%;
-    background: #000;
-    position: absolute;
-    top: -50px;
-    left: 0;
-}
-.heading:after {
-    content: "";
-    height: 2px;
-    width: 60%;
-    background: #fff;
-    position: absolute;
-    bottom: -120px;
-    left: 0;
-}
-@media only screen and (max-width: 400px) and (min-width: 200px) {
-  .heading {
-      font-size: 30px;
-        line-height: 40px;
-      text-transform: uppercase;
-      padding: 10px 20px;
+
+@keyframes spin_1 {
+  0% {
+    stroke: #ffbe00;
   }
-  .small-heading {
-      font-size: 20px;
-        padding: 10px;
-        bottom: -49px;
+  50% {
+    stroke: #FF6600;
   }
-  .counter-timer li {
-      font-size: 12px;
-  }
-  .coming-soon-inner:before {
-    top: -20px;
-  }
-  .heading:before {
-    top: -20px;
-  }
-  .heading:after {
-    bottom: -100px;
-  }
-} 
-@media only screen and (max-width: 767px) and (min-width: 401px) {
-  .heading {
-      font-size: 40px;
-        line-height: 50px;
-      text-transform: uppercase;
-      padding: 10px 20px;
-  }
-  .small-heading {
-      font-size: 25px;
-        padding: 10px;
-        bottom: -48px;
-  }
-  .counter-timer li {
-      font-size: 15px;
-  }
-  .coming-soon-inner:before {
-    top: -30px;
-  }
-  .heading:before {
-    top: -30px;
-  }
-  .heading:after {
-    bottom: -100px;
+  100% {
+    stroke: #ffbe00;
+    -webkit-transform: rotate(-240deg);
+    transform: rotate(-240deg);
   }
 }
-    </style>
-    <script>
-        const second = 1000,
-      minute = second * 60,
-      hour = minute * 60,
-      day = hour * 24;
-let countDown = new Date('Sep 30, 2021 00:00:00').getTime(),
-    x = setInterval(function() {    
-    let now = new Date().getTime(),
-        distance = countDown - now;
-    document.getElementById('days').innerText = Math.floor(distance / (day)),
-    document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour)),
-    document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
-    document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
-}, second)
-$(document).ready(function(){
-  jQuery(".bar").click(function(){
-    jQuery(".toggle-nav").toggleClass("active");
-    jQuery(this).toggleClass("active-toggle");
-    var activetoggle = jQuery(".bar").hasClass("active-toggle");
-    if(activetoggle === true) {
-      jQuery(".bar i").removeClass("fa-bars");
-      jQuery(".bar i").addClass("fa-close");
-    }else {
-      jQuery(".bar i").removeClass("fa-close");
-      jQuery(".bar i").addClass("fa-bars");
-    } 
-  }); 
-}); 
-    </script>
-  </section>
+
+@-webkit-keyframes spin_1 {
+  0% {
+    stroke: #ffbe00;
+  }
+  50% {
+    stroke: #FF6600;
+  }
+  100% {
+    stroke: #ffbe00;
+    -webkit-transform: rotate(-240deg);
+    transform: rotate(-240deg);
+  }
+}
+
+@keyframes spin_2 {
+  0% {
+    stroke: #fff;
+  }
+  50% {
+    stroke: #ffbe00;
+  }
+  100% {
+    stroke: #fff;
+    -webkit-transform: rotate(240deg);
+    transform: rotate(240deg);
+  }
+}
+
+@-webkit-keyframes spin_2 {
+  0% {
+    stroke: #fff;
+  }
+  50% {
+    stroke: #ffbe00;
+  }
+  100% {
+    stroke: #fff;
+    -webkit-transform: rotate(240deg);
+    transform: rotate(240deg);
+  }
+}
+
+@keyframes spin_3 {
+  0% {
+    stroke: #FF6600;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke: #FF6600;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+@-webkit-keyframes spin_3 {
+  0% {
+    stroke: #FF6600;
+  }
+  50% {
+    stroke: #fff;
+  }
+  100% {
+    stroke: #FF6600;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+  }
+}
+
+.data_time {
+  margin-bottom: 10px;
+}
+
+.data_time span {
+  color: #fff;
+}
+
+.btn_sent {
+  cursor: pointer;
+  color: #fff;
+  background: #FF6600;
+  border: 1px solid #fff;
+  border-radius: 10%;
+}
+
+label {
+  font-size: 20px;
+}
+
+.btn_sent:hover {
+  color: #FF6600;
+  background: #fff;
+  border: 1px solid #FF6600;
+}
+
+.facebook,
+.twitter {
+  float: right;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+.facebook:hover,
+.twitter:hover {
+  opacity: 0.9;
+}
+
+.fonction {
+  background: #000;
+  color: #FF6600;
+  padding: 5px;
+  font-family: 'Gruppo', cursive;
+  text-align: center;
+}
+
+.fonction a:hover {
+  color: #FF6600;
+}
+
+.fonction a {
+  color: #ffbe00;
+}
+
+.fonction div {
+  background: #fff;
+  margin: auto;
+  font-size: 20px;
+  padding: 20px;
+  width: 150px;
+}
+
+footer {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+@media all and (max-width: 800px) {
+  body {
+    font-size: 200%;
+  }
+  .btn_sent {
+    font-size: 90%;
+  }
+  footer {
+    font-size: 60%;
+  }
+  .logo_site {
+    display: none;
+  }
+  .affiche_don {
+    display: none;
+  }
+  .link_affiche_don {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .affiche_don {
+    right: 15%;
+  }
+  .logo_site {
+    left: 15%;
+  }
+  .link_affiche_don {
+    right: 17%;
+  }
+}
+      </style>
+      <script>$(document).ready(function() {
+
+        var target_date = new Date("June 20, 2017").getTime();
+      
+        var days, hours, minutes, seconds;
+      
+        var $days = $("#days"),
+          $hours = $("#hours"),
+          $minutes = $("#minutes"),
+          $seconds = $("#seconds");
+      
+        setInterval(function() {
+      
+          var current_date = new Date().getTime();
+          var seconds_left = (target_date - current_date) / 1000;
+      
+          days = parseInt(seconds_left / 86400);
+          seconds_left = seconds_left % 86400;
+      
+          hours = parseInt(seconds_left / 3600);
+          seconds_left = seconds_left % 3600;
+      
+          minutes = parseInt(seconds_left / 60);
+          seconds = parseInt(seconds_left % 60);
+      
+          $days.text(days);
+          $hours.text(hours);
+          $minutes.text(minutes);
+          $seconds.text(seconds);
+      
+        }, 1000);
+      });</script>
 </body>
 </html>
