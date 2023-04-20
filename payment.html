@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Centered Image</title>
+    <title>ABRAXAS 2023 | PAYMENT </title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <div class="image-container">
       <img src="new_posters\QR.png" alt="Your Image">
     </div>
+    
 
     <style>
       :root {
@@ -19,8 +20,23 @@
 
 body {
   background: linear-gradient(to bottom, var(--mc1-darker), var(--mc2-darker));
+  background-repeat: repeat;
+  background-position: center center;
 }
 
+body::before {
+  content: "";
+  background-image: url(https://i.postimg.cc/MKBy4ZH5/Abraxas-logo-new-1.png);
+  opacity: 0.4; /* set opacity as desired */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+}
 .image-container {
   display: flex;
   justify-content: center;
