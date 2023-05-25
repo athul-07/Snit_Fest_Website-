@@ -1142,7 +1142,7 @@ a.full_link {
 .fn_cs_collection img,
 .fn_cs_slider .slider_top img,
 .metaportal_fn_mint_top .mint_left img {
-  min-width: 100%;
+  min-width: 124%;
   opacity:0;
 }
 .fn_cs_slider .slider_top .item {
