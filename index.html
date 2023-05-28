@@ -469,7 +469,7 @@ function hidePreloader() {
 	<div class="metaportal_fn_content">
 		
 		<!-- Home Section -->
-		<div class="banner">
+		<!-- <div class="banner">
 			<ul>
 			  <li>Limited Offer <span class="highlight">Rs 220/-</span> PROSHOW TICKET</li>
 			  <li>Dont't Miss Out !! Rs 350/- Tickets At the Prize of Rs 220/-</li>
@@ -518,19 +518,13 @@ function hidePreloader() {
 			  }
 			  
 			  @keyframes slideBanner {
-				0% {
-				  transform: translateX(0);
-				}
-				33.33% {
-				  transform: translateX(-100%);
-				}
-				66.66% {
-				  transform: translateX(-200%);
-				}
-				100% {
-				  transform: translateX(0);
-				}
-			  }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-100% * 3)); /* Adjust based on the number of items in the banner */
+  }
+}
 			  
 			  @keyframes fadeInOut {
 				0% {
@@ -545,7 +539,7 @@ function hidePreloader() {
 			  }
 			  
 			  </style>
-		  </div>
+		  </div> -->
 		  
 		<section id="home">
 			<div class="container">
