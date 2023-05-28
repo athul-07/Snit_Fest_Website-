@@ -469,6 +469,83 @@ function hidePreloader() {
 	<div class="metaportal_fn_content">
 		
 		<!-- Home Section -->
+		<div class="banner">
+			<ul>
+			  <li>Limited Offer <span class="highlight">Rs 220/-</span> PROSHOW TICKET</li>
+			  <li>Dont't Miss Out !! Rs 350/- Tickets At the Prize of Rs 220/-</li>
+			  <li>Valid Until 12PM On 29/05/2023. </li>
+			  <li>Grab Your Tickets and Save Big ! Unbeatable Discounts For Your Favourite Event ! </li>
+			</ul>
+			<style>
+			.banner {
+  margin-top: 50px; 
+}
+
+			.banner {
+				width: 100%;
+				height: 80px;
+				overflow: hidden;
+				background: linear-gradient(to right, #38003d, #00003d); /* Dark gradient colors */
+				border: 2px solid rgba(255, 255, 255, 0.5);
+				border-radius: 10px;
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			  }
+			  .banner ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				width: 300%;
+				animation: slideBanner 50s linear infinite;
+			  }
+			  
+			  .banner li {
+				position: relative;
+				float: left;
+				width: 33.33%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 25px;
+				animation: fadeInOut 0s ease-in-out infinite;
+				color:yellow;
+			  }
+			  
+			  .banner .highlight {
+				color:red;
+				font-weight: bold;
+			  }
+			  
+			  @keyframes slideBanner {
+				0% {
+				  transform: translateX(0);
+				}
+				33.33% {
+				  transform: translateX(-100%);
+				}
+				66.66% {
+				  transform: translateX(-200%);
+				}
+				100% {
+				  transform: translateX(0);
+				}
+			  }
+			  
+			  @keyframes fadeInOut {
+				0% {
+				  opacity: 0;
+				}
+				50% {
+				  opacity: 1;
+				}
+				100% {
+				  opacity: 0;
+				}
+			  }
+			  
+			  </style>
+		  </div>
+		  
 		<section id="home">
 			<div class="container">
 				<div class="container">
@@ -732,7 +809,7 @@ setInterval('updateTimer()', 1000);
 									 
 					<!-- Video Shortcode -->
 					
-						<img src="https://i.postimg.cc/J7c8NFzp/proshow-ticket-new.jpg" alt="">
+						<img src="new_posters\OUT.png" alt="">
 						
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="play" x="0px" y="0px" height="100px" width="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" class="fn__svg replaced-svg">
 <path class="stroke-solid" fill="none" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7     C97.3,23.7,75.7,2.3,49.9,2.5"></path>
